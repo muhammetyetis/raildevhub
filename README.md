@@ -6,7 +6,7 @@ A modern, multi-section corporate landing page built with **Astro + React + Tail
 
 ## 🚀 Live Demo
 
-🔗 **https://muhammetyetis.github.io/**
+🔗 **https://muhammetyetis.github.io/railDevHub/**
 
 ---
 
@@ -55,7 +55,8 @@ Build dosyaları `dist/` klasöründe oluşturulur.
 
 Bu proje GitHub Pages için yapılandırılmıştır:
 
-- **Site URL:** `https://muhammetyetis.github.io/`
+- **Site URL:** `https://muhammetyetis.github.io/railDevHub/`
+- **Base Path:** `/railDevHub/`
 - **Output:** `dist/` klasörü
 - **Workflow:** `.github/workflows/deploy.yml`
 
@@ -86,7 +87,7 @@ git push origin main
 
 #### 4️⃣ Sitenizi Ziyaret Edin
 
-🌐 **Live Site:** https://muhammetyetis.github.io/
+🌐 **Live Site:** https://muhammetyetis.github.io/railDevHub/
 
 ---
 
@@ -119,7 +120,7 @@ git push origin main
 
 ### ❌ Assets (CSS/JS) Yüklenmiyor
 
-**Çözüm:** Site URL doğru şekilde yapılandırıldı. Tüm asset'ler doğru path'ten yüklenecek.
+**Çözüm:** `base: '/railDevHub/'` ayarı eklendi. Tüm asset'ler doğru path'ten yüklenecek.
 
 ### ❌ Workflow Çalışmıyor
 
@@ -131,7 +132,7 @@ git push origin main
 ### ❌ 404 Hatası Alıyorum
 
 **Kontrol Et:**
-- URL doğru mu: `https://muhammetyetis.github.io/`
+- URL doğru mu: `https://muhammetyetis.github.io/railDevHub/` (sonunda `/` var)
 - Deployment tamamlandı mı? (Actions tab'ından kontrol edin)
 - Tarayıcı cache'ini temizleyin (Ctrl+Shift+R)
 
@@ -163,6 +164,7 @@ npm run preview
 ```javascript
 export default defineConfig({
   site: 'https://muhammetyetis.github.io/',
+  base: '/railDevHub/',
   integrations: [tailwind(), react()],
   output: 'static',
 });
@@ -177,7 +179,8 @@ export default defineConfig({
 ### Önemli Notlar
 
 - ✅ Özel domain (CNAME) kullanılmıyor
-- ✅ GitHub Pages URL'si: `https://muhammetyetis.github.io/`
+- ✅ GitHub Pages URL'si: `https://muhammetyetis.github.io/railDevHub/`
+- ✅ Base path: `/railDevHub/` (Repo adı ile eşleşmeli)
 - ✅ Dark mode destekli landing page
 - ✅ Otomatik deployment aktif
 - ✅ Node.js 20 kullanılıyor
