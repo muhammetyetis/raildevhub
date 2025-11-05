@@ -10,7 +10,8 @@ export default defineConfig({
 		react(),
 	],
 	output: 'static',
-	site: 'https://raildevhub.pia-team.com',
+	site: 'https://muhammetyetis.github.io',
+	base: '/railDevHub/',
 });
 
 
