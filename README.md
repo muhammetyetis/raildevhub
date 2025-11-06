@@ -72,7 +72,7 @@ git push origin main
 
 #### 2️⃣ GitHub Pages Ayarlarını Yap
 
-1. Repo'nuza gidin: https://github.com/muhammetyetis/railDevHub
+1. Repo'nuza gidin: https://github.com/muhammetyetis/raildevhub
 2. **Settings** → **Pages** sekmesine tıklayın
 3. **Build and deployment** bölümünde:
    - **Source:** `GitHub Actions` seçin
@@ -80,7 +80,7 @@ git push origin main
 
 #### 3️⃣ Deployment'ı Takip Et
 
-- **Actions** sekmesine gidin: https://github.com/muhammetyetis/railDevHub/actions
+- **Actions** sekmesine gidin: https://github.com/muhammetyetis/raildevhub/actions
 - "Deploy Astro site to GitHub Pages" workflow'unu göreceksiniz
 - İlk deploy 2-5 dakika sürebilir
 - Yeşil ✅ işareti gördüğünüzde deployment tamamlanmıştır
